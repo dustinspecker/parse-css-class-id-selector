@@ -10,7 +10,13 @@
     "test": "npm run lint && npm run compile && nyc ava"
   },
   "repository": "dustinspecker/parse-css-class-id-selector",
-  "keywords": [],
+  "keywords": [
+    "parse",
+   " css",
+    "class",
+    "id" ,
+    "selector"
+  ],
   "author": {
     "name": "Dustin Specker",
     "email": "DustinSpecker@DustinSpecker.com",
