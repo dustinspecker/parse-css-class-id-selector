@@ -1,6 +1,6 @@
 {
   "name": "parse-css-class-id-selector",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Retreive class names and id from a CSS selector",
   "main": "lib/index.js",
   "scripts": {
