@@ -26,8 +26,8 @@ test('it should return an object with array of class names', t => {
   const hello = parseCssClassIdSelector('.hello')
   const helloGoodBye = parseCssClassIdSelector('.hello.good-bye')
 
-  t.same(hello.classNames, ['hello'])
-  t.same(helloGoodBye.classNames, ['hello', 'good-bye'])
+  t.deepEqual(hello.classNames, ['hello'])
+  t.deepEqual(helloGoodBye.classNames, ['hello', 'good-bye'])
 })
 
 test('it should return an object with an id', t => {
@@ -42,5 +42,5 @@ test('it should handle mix of id and classes', t => {
   const both = parseCssClassIdSelector('.hello#hi-world.good-bye')
 
   t.is(both.id, 'hi-world')
-  t.same(both.classNames, ['hello', 'good-bye'])
+  t.deepEqual(both.classNames, ['hello', 'good-bye'])
 })
